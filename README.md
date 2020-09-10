@@ -1,6 +1,6 @@
 # toaster
 Headless e- commerce system
-Technology stack
+#Technology stack
 1. Django
-2.Graphql
+2. Graphql
 3. Postgresql

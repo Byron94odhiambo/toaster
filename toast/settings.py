@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'crust',
         'USER': 'postgres',
         'HOST': 'localhost',
-        'PASSWORD': '#byron@4991',
+        'PASSWORD': '',
         'PORT':'5432',
     
     }

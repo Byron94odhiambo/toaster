@@ -60,14 +60,14 @@ class Location(models.Model):
         return self.name
 
 
-class Suburb(models.Model):
+'''class Suburb(models.Model):
     name = models.CharField(max_length = 255)
     post_code = models.IntegerField()
     city_id = models.IntegerField()
-    coords = models.PointField( default = "")
+   # coords = models.MultiPolygonField()
 
     def __str__(self):
-        return self.name
+        return self.name'''
 
 
 class Comment(models.Model):
@@ -189,7 +189,10 @@ class Store(models.Model):
     z_url = models.TextField()
     more_info = models.TextField()
     avg_cost =models.IntegerField()
-    coords = models.PointField( default = "")
+    coords = models.MultiPolygonField()
+
+  
+
 
     def __str__(self):
         return self.name
@@ -265,6 +268,7 @@ class UserAccount(models.Model):
 
 class UserClaim(models.Model):
     user_id = models.IntegerField()
+    
     #type str 
     #value type str
     def __str__(self):

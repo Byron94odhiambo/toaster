@@ -1,4 +1,4 @@
-# toaster
+# Toaster
 Headless e- commerce system
 # Technology stack
 1. Django

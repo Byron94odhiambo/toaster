@@ -12,7 +12,7 @@ class Cuisine(models.Model):
 class Admin(models.Model):
     store_id = models.IntegerField()
     created_at =models.DateTimeField(default = datetime.now) 
-    hash = models.CharField(max_length = 255)
+   # hash = models.CharField(max_length = 255)
     def __str__(self):
         return self.store_id
 
@@ -65,7 +65,6 @@ class Location(models.Model):
     post_code = models.IntegerField()
     city_id = models.IntegerField()
    # coords = models.MultiPolygonField()
-
     def __str__(self):
         return self.name'''
 
@@ -189,7 +188,7 @@ class Store(models.Model):
     z_url = models.TextField()
     more_info = models.TextField()
     avg_cost =models.IntegerField()
-    coords = models.MultiPolygonField()
+    #coords = models.MultiPolygonField()
 
   
 
@@ -318,56 +317,3 @@ class UserReward(models.Model):
 
     def __str__(self):
         return self.user_id
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
